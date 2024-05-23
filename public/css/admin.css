@@ -1,0 +1,409 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+/* --- Master Trading Page --- */
+
+/* navbar */
+
+#admin-sidebar {
+    background-color: #a9dfbf ;
+    width: 16%;
+}
+
+#sidebar-logo {
+    color: black;
+}
+
+#admin-body {
+    width: 84%;
+}
+
+@media (max-width: 1200px) {
+    #admin-sidebar {
+        width: 23%;
+    }
+    #admin-body {
+        width: 77%;
+    }
+}
+
+@media (max-width: 750px) {
+    #admin-sidebar {
+        width: 200px;
+    }
+    #admin-body {
+        width: 800px;
+    }
+}
+
+.nav-item {
+  margin-bottom: 4%;
+}
+
+.nav-link {
+  color: #282828;
+  font-weight: 500;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .admin-info {
+    padding: 2% 2%;
+    background-color: #00555555;
+    border: 1px solid #00555555;
+    border-radius: 5px;
+  }
+
+  .admin-info-title {
+    font-weight: 700;
+  }
+
+  .admin-info-value {
+    font-weight: 600;
+    color: brown;
+  }
+
+  #admin-sidebar li .submenu{
+    list-style: none;
+    margin-left: 1.2rem;
+    padding: 0;
+    background-color: rgba(176, 216, 192, 0.6);
+    border: 1px solid darkseagreen;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+
+  .submenu li:hover {
+    background-color: rgba(143, 188, 143, 0.2);
+  }
+
+  .submenu li a {
+    font-weight: 400;
+  }
+
+  /* -- collapsible css -- */
+
+.collapsible {
+  background-color: #aeb6bf;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-top: 1.6%;
+  border-radius: 5px;
+}
+
+.active-section, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+  content: '\1F782'; /* Unicode character for "plus" sign (+) is \02795   023F5*/
+  font-size: 18px;
+  color: rgb(125, 60, 152);
+  float: left;
+  margin: 0 12px;
+}
+
+.active-section:after {
+  content: "\1F783"; /* Unicode character for "minus" sign (-) is \2796  23F7*/
+}
+
+
+/* --- Responsive Table --- */
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #6c7ae0;
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+
+.table100-head th{
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #ececff;
+  cursor: pointer;
+}
+
+.column1 {
+  width: 220px;
+  padding-left: 40px;
+}
+
+.column2 {
+  width: 120px;
+}
+
+.column3 {
+  width: 365px;
+}
+
+.column4 {
+  width: 210px;
+  /* text-align: right; */
+}
+
+
+@media screen and (max-width: 992px) {
+  table {
+    display: block;
+    border: 1px solid #6c7ae0;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 24px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Type";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Price";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Action";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Price";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Quantity";
+  }
+  table tbody tr td:nth-child(6):before {
+    content: "Total";
+  }
+
+  .column4,
+  .column5,
+  .column6 {
+    text-align: left;
+  }
+
+  .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+  }
+
+  tbody tr {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-table100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* --- Form --- */
+.admin-form-label {
+    font-weight: 600;
+}
+
+/* --- Profile --- */
+.profile-button {
+    width: 30%;
+}
+
+@media (max-width: 1600px) {
+    .profile-button {
+        width: 50%;
+    }
+  }
+
+
+/* --- Modals --- */
+
+.modal-form-label {
+  font-weight: 500;
+}
+
+/* --- Trading Page --- */
+
+#page-main-section {
+  margin: 1% 1%;
+  background-color: #fff;
+  padding: 2% 2% 7% 2%;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+#btn-create-master {
+  background-color: darkseagreen;
+  color: #34495e;
+  margin: 1% 0;
+}
+
+
+/* --- nav tabs --- */
+
+.nav-tabs {
+  border-bottom: 1px solid gray;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    border: 1px solid green;
+    border-top: 3px solid green;
+    border-bottom: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.tab-content {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
